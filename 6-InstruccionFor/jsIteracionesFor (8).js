@@ -1,26 +1,28 @@
 function mostrar()
 {
-	var numeroIngresado;
 	var i;
-	var bandera;
+	var numero;
+	var flag;
 
-	bandera=0
-	numeroIngresado=prompt("Ingrese el numero ");
-	numeroIngresado=parseInt(numeroIngresado);
+	flag=0;
 
+	do
+	{
+		numero=prompt("Ingrese un numero por favor.");
+		numero=parseInt(numero);
+	}while(isNaN(numero));
 
-	for(i=2;i<numeroIngresado;i++)
+	for(i=2;i<numero;i++)
 	{
 		console.log(i);
-		if(numeroIngresado%i==0) //esto quiere decir que el numeroIngresado es divisible por el i. Si encontre un divisor quiere decir que ya no es primo.
+		if(numero%i==0)
 		{
-			bandera=1;
-			//break;
-		} 
-	}
-
-	if(bandera==0)
+			flag=1;
+			break;
+		}
+	}		
+	if(flag==0)
 	{
-		alert("Es primo el numero: " +numeroIngresado);
+		alert("El número "+numero+ " es primo.");
 	}
 }//FIN DE LA FUNCIÓN
