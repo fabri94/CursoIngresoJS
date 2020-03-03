@@ -1,6 +1,6 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	
-
-}//FIN DE LA FUNCIÓN
+	var numeroRandom;
+	numeroRandom=Math.floor(Math.random()*50000)+1;
+	console.log(numeroRandom);
+}

@@ -1,30 +1,28 @@
 function mostrar()
 {
 
-	var contador;
-	contador=0;
-	var positivo;
-	positivo=0;
-	var negativo;
-	negativo=1;
+	var positivo=0;
+	var negativo=1;
 	var numeroIngresado;
-	var respuesta;
-	respuesta='si';
-	var suma;
-	var multiplicacion;
+	var respuesta='si';
 
-	while(respuesta==si)
+	while(respuesta=='si')
 	{
-		numeroIngresado=prompt("Ingrese su numero por favor");
+		numeroIngresado=prompt("Ingrese el numero por favor.");
 		numeroIngresado=parseInt(numeroIngresado);
-		contador=contador+1;
-		suma=positivo+contador;
-		multiplicacion=negativo*contador;
-		respuesta=prompt("Ingrese 'si' o de lo contrario sale");		
+
+		if(numeroIngresado>0)
+		{
+			positivo=positivo+numeroIngresado;
+			positivo=parseInt(positivo);
+		}
+		else
+		{	
+			negativo=negativo*numeroIngresado;
+			negativo=parseInt(negativo);
+		}
+		respuesta=prompt("¿Desea seguir agregando numeros?");
 	}
-
-
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;
-
 }//FIN DE LA FUNCIÓN
