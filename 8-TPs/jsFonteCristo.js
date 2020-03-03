@@ -24,7 +24,7 @@ function NumerosPares ()
  	}
  	
  	console.log("La cantidad de numeros pares es: "+contadorPares);
- 	alert("La cantidad de números pares es: "+contadorPares)
+ 	alert("La cantidad de números pares es: "+contadorPares);
 }	
 
 function NumerosImpares ()
@@ -96,7 +96,7 @@ function VerificarPrimo ()
 		alert("El numero ingresado "+numeroPositivo+" es primo.");
 	}
 
-function NumerosPrimos ()
+function NumerosPrimos()
 {
 	var numeroPositivo;
 	var divisor;
@@ -132,3 +132,4 @@ function NumerosPrimos ()
 	alert("La cantidad de numeros primos es: "+contadorPrimos);
 	console.log("La cantidad de numeros primos es: "+contadorPrimos);
 }
+}	
